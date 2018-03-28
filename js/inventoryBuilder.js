@@ -1,6 +1,15 @@
+function getData(){
+  var myFleet = [];
+  //array that adds all above and returns the array
+  myFleet.push(vehicle1, vehicle2, vehicle3, vehicle4, vehicle5)
+  return myFleet;
+}
+
+module.exports = {
+  getData
+}
 
 //this is an object
-
 
 var vehicle1 = {
   model: "Town Car",
@@ -41,3 +50,4 @@ var vehicle5 = {
   renter: "A17k19",
   value: 2000
 }
+

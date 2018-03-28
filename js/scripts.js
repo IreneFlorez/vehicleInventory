@@ -1,21 +1,20 @@
-$( document ).ready( function () {
+var database = require("./inventoryBuilder.js")
+var myFleet = database.getData();
 
-  console.log("Hello world!");
+//var fullString = "Model: ";
+//for (var i=0; i<array.length; i++){
+//  fullString = fullString + array[i].model + ", ";
+//}
 
-});
 
-var myFleet = [];
-
-myFleet.push(vehicle1, vehicle2, vehicle3, vehicle4, vehicle5)
-
-for (var i=0; i<6; i++){
-  print model.value();
+for (var i=0; i<5; i++){
+  //print model.value();
+  console.log(myFleet[i].model);
 }
 
 
 
-myFleet[0] = vehicle1;
-myFleet[0].model;
+//myFleet[0] = vehicle1;
+//myFleet[0].model;
+//vehicle1.model = "Husky";
 
-vehicle1.model = "Husky";
-console.log(vehicle1.model)
